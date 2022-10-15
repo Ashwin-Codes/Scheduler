@@ -71,3 +71,61 @@
 	align-self: flex-start;
 	color: gray;
 }
+
+/* prompt */
+.schedule-prompt {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.schedule-prompt form {
+	position: relative;
+	display: flex;
+	gap: 1.5rem;
+	flex-direction: column;
+	padding: 2rem;
+	background-color: #fff;
+	border-radius: 20px;
+}
+
+.schedule-prompt form input {
+	border: none;
+	border-bottom: 2px solid #e1e1ff;
+	font-size: 1rem;
+	letter-spacing: 2px;
+}
+
+.schedule-prompt form button {
+	border: none;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	padding: 0.8rem;
+	background-color: #e1e1ff;
+	color: gray;
+	cursor: pointer;
+	transition: all linear 100ms;
+	border-radius: 10px;
+}
+
+.schedule-prompt form button:hover {
+	transform: scale(1.05);
+}
+
+.modal-close-btn {
+	color: #8282c9;
+	padding: 0.25rem;
+	font-size: 1.5rem;
+	position: absolute;
+	z-index: 2;
+	right: 0;
+	top: -5px;
+	cursor: pointer;
+}
