@@ -13,8 +13,8 @@ function App() {
 			<BrowserRouter>
 				<Navbar>
 					<Routes>
-						<Route path="/*" element={<Navigate replace to={"/calls"} />} />
-						<Route path="/calls" element={<Calls />} />
+						<Route path="/*" element={<Navigate to={"/calls"} />} />
+						<Route path="/calls/*" element={<Calls />} />
 						<Route path="/meetings" />
 					</Routes>
 				</Navbar>
