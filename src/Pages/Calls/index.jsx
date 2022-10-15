@@ -3,6 +3,7 @@ import "./calls.css";
 
 // Components
 import WeekRange from "./Subcomponents/weekRange";
+import Schedule from "./Subcomponents/schedule";
 
 // Hooks
 import { useLocation, useNavigate } from "react-router-dom";
@@ -26,6 +27,7 @@ export default function Index() {
 	return (
 		<div className="page-wrapper calls-page-wrapper">
 			<WeekRange />
+			<Schedule />
 		</div>
 	);
 }
