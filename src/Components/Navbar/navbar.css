@@ -1,0 +1,65 @@
+.navbar {
+	background-color: #fbfaff;
+	width: 100%;
+	border-top: 1px solid #eeeef0;
+	border-bottom: 1px solid #eeeef0;
+	height: 4rem;
+}
+
+.wrapper {
+	height: 100%;
+	width: 85%;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	font-size: 1.25rem;
+	color: #5c587a;
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	line-height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.3rem;
+}
+
+.logo-icon {
+	font-size: 1.7rem;
+	color: #7267f6;
+}
+
+.navlinks {
+	list-style: none;
+	font-family: "Noto Sans Ethiopic", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.navbar-navlink {
+	color: #40414c;
+	font-weight: 500;
+	text-decoration: none;
+	padding: 0.3rem;
+}
+
+.navbar-navlink.active {
+	color: #7e77ad;
+	background-color: #e1e1ff;
+	border-radius: 4px;
+}
+
+@media screen and (max-width: 500px) {
+	.logo {
+		display: none;
+	}
+	.wrapper {
+		justify-content: center;
+	}
+}
